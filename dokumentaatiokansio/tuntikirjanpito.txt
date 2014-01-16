@@ -1,0 +1,3 @@
+16.1.
+
+Tein ensimmäistä deadlinea 4h, mutta välissä sähelsin kaikkea muuta, joten aikaa meni oikeasti n. 2h. Aikaa kului lähinnä Git:n ihmettelyyn ja aihemäärittelyyn.
