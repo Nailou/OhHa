@@ -1,3 +1,11 @@
 16.1.
 
 Tein ensimmäistä deadlinea 4h, mutta välissä sähelsin kaikkea muuta, joten aikaa meni oikeasti n. 2h. Aikaa kului lähinnä Git:n ihmettelyyn ja aihemäärittelyyn.
+
+22.1.
+
+20 min tein luokkakaaviota, oikean työkalun löytäminen ja omaksuminen vei aikaa.
+
+23.1.
+
+4h tein koodia, testejä ja ihmettelin pitkään githubin toimintaa, ei suju vielä luontevasti.
