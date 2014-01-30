@@ -9,3 +9,7 @@ Tein ensimmäistä deadlinea 4h, mutta välissä sähelsin kaikkea muuta, joten aikaa
 23.1.
 
 4h tein koodia, testejä ja ihmettelin pitkään githubin toimintaa, ei suju vielä luontevasti.
+
+30.1.
+
+4h kului ohjelmointiin, testien tekemiseen ja uuden luokkakaavion tekemiseen (asioiden kertaamiseen)
