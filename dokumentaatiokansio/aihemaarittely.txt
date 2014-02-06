@@ -5,3 +5,5 @@ Käyttäjä: Luultavasti vain meikäläinen
 Ohjelman idea on toimia helpottavana työkaluna Magic the Gathering-korttipelissä. Joudun pakkani luonteen vuoksi usein käyttämään ruutupaperia erinäisiin pieniin laskelmiin ja tarkoituksenani olis ulkoistaa nämä laskut tietokoneohjelmalle.
 
 Ohjelman toimintoihin kuuluu elämäpisteiden ja käytettävissä olevan manan ylöskirjaus. Erinäiset kortit ja pöydässä olevien hirviöiden määrä vaikuttaa näihin tekijöihin jatkuvasti. Ohjelmaan syötetään aina pöydällä tapahtuneet muutokset ja tilanne päivittyy näytölle. Ohjelma voisi myös laskea todennäköisyyden tietyn kortin nostamiselle seuraavaksi. Myös muita hyödyllisiä lisäominaisuuksia tulen lisäilemään, jahka keksin.
+
+Manan (käytettävissä olevien resurssien) esityksessä on lisäominaisuutena mahdollisuus gaea's gradle- ja mana reflection- nimisten korttien mukana ololle. Toinen antaa manaa pöydässä olevien omien creatureiden verran ja toinen tuplaa jokaisen manantuottajan antaman manan.

@@ -13,3 +13,11 @@ Tein ensimmäistä deadlinea 4h, mutta välissä sähelsin kaikkea muuta, joten aikaa
 30.1.
 
 4h kului ohjelmointiin, testien tekemiseen ja uuden luokkakaavion tekemiseen (asioiden kertaamiseen)
+
+5.2.
+
+1,5h kertailin MOOC:in materiaaleista käyttöliittymän tekemistä
+
+6.2.
+
+4,5h käyttöliittymän hahmottelua, koodaamista ja javadocin ihmettelyä, sekä yleistä kertaamista

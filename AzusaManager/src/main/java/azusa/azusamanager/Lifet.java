@@ -2,6 +2,11 @@
 package azusa.azusamanager;
 
 
+/**
+ * Kuvaa elämäpisteiden määrää
+ *
+ */
+
 public class Lifet {
     
     private int life;
