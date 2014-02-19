@@ -38,9 +38,9 @@ public class Manat {
         paivitaTilanne(creaturetPoydassa);
     }
     
-    public void tuplamanatPois() {
+    public void tuplamanatPois(int creaturetPoydassa) {
         this.tuplamanat = false;
-        
+        paivitaTilanne(creaturetPoydassa);
     }
     
     public void cradlePoytaan(int creaturetPoydassa) {

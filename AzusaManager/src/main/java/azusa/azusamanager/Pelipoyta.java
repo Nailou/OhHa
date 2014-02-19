@@ -48,6 +48,22 @@ public class Pelipoyta {
     public void landitPlussaa() {
         this.manat.uusiLand(muutKortitPoydassa);
     }
+    
+    public void tuplaManat() {
+        this.manat.manatTuplana(creaturetPoydassa);
+    }
+    
+    public void tuplaManatPois() {
+        this.manat.tuplamanatPois(creaturetPoydassa);
+    }
+    
+    public void gradlePoytaan() {
+        this.manat.cradlePoytaan(creaturetPoydassa);
+    }
+    
+    public void gradlePois() {
+        this.manat.cradlePois(creaturetPoydassa);
+    }
 
     public int getKortitGravessa() {
         return kortitGravessa;

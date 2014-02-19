@@ -8,7 +8,8 @@ public class Main
 {
     public static void main( String[] args )
     {
-        Kayttoliittyma kayttoliittyma = new Kayttoliittyma();
+        Pelipoyta poyta = new Pelipoyta();
+        Kayttoliittyma kayttoliittyma = new Kayttoliittyma(poyta);
         SwingUtilities.invokeLater(kayttoliittyma);
     }
 }

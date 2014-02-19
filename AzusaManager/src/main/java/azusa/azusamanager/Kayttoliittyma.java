@@ -12,6 +12,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.WindowConstants;
 
@@ -22,14 +23,16 @@ import javax.swing.WindowConstants;
 public class Kayttoliittyma implements Runnable {
     
     private JFrame frame;
+    private Pelipoyta poyta;
 
-    public Kayttoliittyma() {
+    public Kayttoliittyma(Pelipoyta poyta) {
+        this.poyta = poyta;
     }
 
     @Override
     public void run() {
-        frame = new JFrame("Otsikko");
-        frame.setPreferredSize(new Dimension(500, 300));
+        frame = new JFrame("Azusa manager 2k");
+        frame.setPreferredSize(new Dimension(500, 200));
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,21 +43,46 @@ public class Kayttoliittyma implements Runnable {
     }
 
     private void luoKomponentit(Container container) {
-        GridLayout layout = new GridLayout(3, 4);
+        GridLayout layout = new GridLayout(4, 4);
         container.setLayout(layout);
-        JTextArea Lifet = new JTextArea("Lifet");
-        JTextArea LifetNumeroina = new JTextArea();
-        JButton lifetPlussaa = new JButton("+");
-        JButton lifetMiinusta = new JButton("-");
+        JLabel Lifet = new JLabel("Lifet");
+        JTextArea LifetNumeroina = new JTextArea("40");
         
-        JTextArea Landit = new JTextArea("Landit");
-        JTextArea landitNumeroina = new JTextArea();
-        JTextArea Manat = new JTextArea("Manat");
-        JTextArea ManatNumeroina = new JTextArea();
+        JButton lifetPlussaa = new JButton("+");
+        LifePlusKuuntelija lifePlussaaja = new LifePlusKuuntelija(poyta, LifetNumeroina);
+        lifetPlussaa.addActionListener(lifePlussaaja);
+        
+        JButton lifetMiinusta = new JButton("-");
+        LifeMiinusKuuntelija lifeMiinustaja = new  LifeMiinusKuuntelija(poyta, LifetNumeroina);
+        lifetMiinusta.addActionListener(lifeMiinustaja);
+        
+        JLabel Landit = new JLabel("Landit");
+        JTextArea landitNumeroina = new JTextArea("0");
+        JLabel Manat = new JLabel("Manat");
+        JTextArea ManatNumeroina = new JTextArea("0");
+        
         JButton landitPlussaa = new JButton("+");
-        JButton landitMiinusta = new JButton("-");
+        LandiPlusKuuntelija landPlussaaja = new LandiPlusKuuntelija(poyta, landitNumeroina, ManatNumeroina);
+        landitPlussaa.addActionListener(landPlussaaja);
+        
+        JLabel tulevatMiinukset = new JLabel("ei niitä kukaan tuhoa");
+//        JButton landitMiinusta = new JButton("-");
+        
+        JLabel creaturet = new JLabel ("Creaturet");
+        JTextArea creaturetLkm = new JTextArea("0");
+        JButton creaturetMiinusta = new JButton("-");
+        
+        JButton creaturetPlussaa = new JButton("+");
+        CreaturePlusKuuntelija creaturePlusKuuntelija = new CreaturePlusKuuntelija(poyta, creaturetLkm, ManatNumeroina);
+        creaturetPlussaa.addActionListener(creaturePlusKuuntelija);
+        
         JCheckBox gradle = new JCheckBox("Gradle");
+        GradleKuuntelija gradleKuuntelija = new GradleKuuntelija(gradle, poyta, ManatNumeroina);
+        gradle.addActionListener(gradleKuuntelija);
+        
         JCheckBox tuplat = new JCheckBox("Tuplamanat");
+        TuplamanaKuuntelija tuplaKuuntelija = new TuplamanaKuuntelija(tuplat, poyta, ManatNumeroina);
+        tuplat.addActionListener(tuplaKuuntelija);
         
         container.add(Lifet);
         container.add(lifetMiinusta);
@@ -62,9 +90,14 @@ public class Kayttoliittyma implements Runnable {
         container.add(LifetNumeroina);
         
         container.add(Landit);
-        container.add(landitMiinusta);
+        container.add(tulevatMiinukset);
+//        container.add(landitMiinusta);
         container.add(landitPlussaa);
         container.add(landitNumeroina);
+        container.add(creaturet);
+        container.add(creaturetMiinusta);
+        container.add(creaturetPlussaa);
+        container.add(creaturetLkm);
         container.add(gradle);
         container.add(tuplat);
         container.add(Manat);
