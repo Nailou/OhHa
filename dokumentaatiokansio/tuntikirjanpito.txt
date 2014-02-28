@@ -22,4 +22,14 @@ Tein ensimmäistä deadlinea 4h, mutta välissä sähelsin kaikkea muuta, joten aikaa
 
 4,5h käyttöliittymän hahmottelua, koodaamista ja javadocin ihmettelyä, sekä yleistä kertaamista
 
-13.2. Koodausta ja testien tekemistä 2.5h, sekvenssikaavioiden kertausta ja laatimista 2h
+13.2. 
+
+Koodausta ja testien tekemistä 2.5h, sekvenssikaavioiden kertausta ja laatimista, 2h
+
+17.2.
+
+Ohjelman valmistelua demoa varten, käyttöliittymää vimeistelty ja nappuloiden kuuntelijat lisätty, 4h
+
+27.2.
+
+Ohjelman viimeistelyä ja puuttuvan dokumentoinnin tekemistä. Isoja ongelmia viimeisten ominisuuksien kanssa, lopputuloksena rajuja leikkauksia. Aikaa meni n. 8h

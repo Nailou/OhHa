@@ -60,18 +60,6 @@ public class PelipoytaTest {
     }
     
     @Test
-    public void konstruktoriAsettaaKasikortitOikein() {
-        poyta.getKasikortit();
-        assertEquals(0, poyta.getKasikortit());
-    }
-    
-    @Test
-    public void kasikortitKasvaaOikein() {
-        poyta.uusiKasikortti();
-        assertEquals(1, poyta.getKasikortit());
-    }
-    
-    @Test
     public void konstruktoriAsettaaCreaturetOikein() {
         poyta.getCreaturetPoydassa();
         assertEquals(0, poyta.getCreaturetPoydassa());
@@ -91,15 +79,4 @@ public class PelipoytaTest {
         assertEquals(0, poyta.getCreaturetPoydassa());
     }
     
-    @Test
-    public void konstruktoriAsettaaGravenOikein() {
-        poyta.getKortitGravessa();
-        assertEquals(0, poyta.getKortitGravessa());
-    }
-    
-    @Test
-    public void graveKasvaaOikein() {
-        poyta.uusiKorttiGravelle();
-        assertEquals(1, poyta.getKortitGravessa());
-    }
 }

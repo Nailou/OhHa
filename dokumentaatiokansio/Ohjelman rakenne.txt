@@ -1,0 +1,1 @@
+Käyttöliittymällä annetaan komentoja pelipöytä-luokalle, joka yhdistää Mana- ja Life-luokkien toiminnot välittäen niille komentoja ja saaden tietoa takaisin. Grave-luokka poistettiin tarpeettomana, sen mahdollistamat lisäominaisuudet tekivät ohjelmasta liian käyttäjäepäystävällisen. 

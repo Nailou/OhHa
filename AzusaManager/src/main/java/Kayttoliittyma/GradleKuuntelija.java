@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package azusa.azusamanager;
+package Kayttoliittyma;
 
+import azusa.azusamanager.Pelipoyta;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
@@ -15,13 +16,13 @@ import javax.swing.JTextArea;
  *
  * @author Niilo
  */
-public class TuplamanaKuuntelija implements ActionListener {
+public class GradleKuuntelija implements ActionListener {
     
     private JCheckBox box;
     private Pelipoyta poyta;
     private JTextArea kohdeManat;
     
-    public TuplamanaKuuntelija (JCheckBox laatikko, Pelipoyta poyta, JTextArea kohdeManat) {
+    public GradleKuuntelija (JCheckBox laatikko, Pelipoyta poyta, JTextArea kohdeManat) {
         this.box = laatikko;
         this.poyta = poyta;
         this.kohdeManat = kohdeManat;
@@ -30,10 +31,10 @@ public class TuplamanaKuuntelija implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         if (this.box.isSelected()) {
-            poyta.tuplaManat();
+            poyta.gradlePoytaan();
             kohdeManat.setText(Integer.toString(this.poyta.getManat()));
         } else {
-            poyta.tuplaManatPois();
+            poyta.gradlePois();
             kohdeManat.setText(Integer.toString(this.poyta.getManat()));
         }
     }

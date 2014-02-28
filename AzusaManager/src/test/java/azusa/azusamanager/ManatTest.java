@@ -69,6 +69,20 @@ public class ManatTest {
     }
     
     @Test
+    public void manatPysyyNollassaKunOtetaanNegatiivisetLandit() {
+        manat.landiPois(0);
+        assertEquals(0, manat.getManat());
+    }
+    
+    @Test
+    public void landitVaheneeOikein() {
+        manat.uusiLand(0);
+        manat.uusiLand(0);
+        manat.landiPois(0);
+        assertEquals(1, manat.getManat());
+    }
+    
+    @Test
     public void manatMuuttuuOikeinKunCradlePoydassa() {
         manat.uusiLand(0);
         manat.uusiLand(2);

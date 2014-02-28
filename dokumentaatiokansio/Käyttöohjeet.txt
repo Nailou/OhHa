@@ -1,0 +1,7 @@
+Ohjelmaa käytetään Magic: The Gathering-keräilykorttipelin apuohjelmana. Ohjelmalla voit pitää jatkuvasti muistissa elämäpisteidesi (life) määrän. Plus- ja minusnapeilla voit muuttaa elämäpisteiden määrää. Elämäpisteet voivat mennä miinukselle (on olemassa kortteja, jotka väliaikaisesti estävät häviämisen, vaikka elämäpisteet olisivat miinuksella).
+
+Landit ovat kortteja, jotka tuottavat pelissä käytettävää resurssia, manaa. Land-korttien määrää muutetan myös plus- ja miinusnapeilla. Käytettävissä olevan manan määrä päivittyy samalla oikeaan alakulmaan.
+
+Pöydässä olevien omien hirviöiden (creaturet) määrää muutetaan niin ikään plus- ja miinusnapeilla. Gaea's Gradle-kortti tuottaa manaa pöydässä olevien omien hirviöiden verran, vaikutuksen saa päälle ruksimalla "Gradle" laatikon. Manatilanne päivittyy jälleen oikeaan alakulmaan.
+
+Tuplamanat-laatikon ruksaamalla landisi ja Gradle tuottavat kaksinkertaisen määrän manaa.

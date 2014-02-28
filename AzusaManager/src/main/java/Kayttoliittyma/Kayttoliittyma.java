@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package azusa.azusamanager;
+package Kayttoliittyma;
 
+import azusa.azusamanager.Pelipoyta;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -65,12 +66,16 @@ public class Kayttoliittyma implements Runnable {
         LandiPlusKuuntelija landPlussaaja = new LandiPlusKuuntelija(poyta, landitNumeroina, ManatNumeroina);
         landitPlussaa.addActionListener(landPlussaaja);
         
-        JLabel tulevatMiinukset = new JLabel("ei niitä kukaan tuhoa");
-//        JButton landitMiinusta = new JButton("-");
+        JButton landitMiinusta = new JButton("-");
+        LandiMiinusKuuntelija landMiinustaja = new LandiMiinusKuuntelija(poyta, landitNumeroina, ManatNumeroina);
+        landitMiinusta.addActionListener(landMiinustaja);
         
         JLabel creaturet = new JLabel ("Creaturet");
         JTextArea creaturetLkm = new JTextArea("0");
+        
         JButton creaturetMiinusta = new JButton("-");
+        CreatureMiinusKuuntelija creatureMiinusKuuntelija = new CreatureMiinusKuuntelija(poyta, creaturetLkm, ManatNumeroina);
+        creaturetMiinusta.addActionListener(creatureMiinusKuuntelija);
         
         JButton creaturetPlussaa = new JButton("+");
         CreaturePlusKuuntelija creaturePlusKuuntelija = new CreaturePlusKuuntelija(poyta, creaturetLkm, ManatNumeroina);
@@ -90,8 +95,7 @@ public class Kayttoliittyma implements Runnable {
         container.add(LifetNumeroina);
         
         container.add(Landit);
-        container.add(tulevatMiinukset);
-//        container.add(landitMiinusta);
+        container.add(landitMiinusta);
         container.add(landitPlussaa);
         container.add(landitNumeroina);
         container.add(creaturet);

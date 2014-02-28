@@ -1,4 +1,5 @@
 package azusa.azusamanager;
+import Kayttoliittyma.Kayttoliittyma;
 import javax.swing.SwingUtilities;
 /**
  * Maini josta ohjelma käynnistyy
